@@ -1,7 +1,25 @@
 aid: fulfil
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fulfil.png
 name: Fulfil
-description: Fulfil is a company surfaced as a portfolio company of dcvc and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Fulfil (Fulfil Solutions) is an automation company that builds robotic online-grocery
+  fulfillment systems. Its ShopBot robots perform zero-labor pick-and-pack across all grocery
+  temperatures and categories (ambient, refrigerated, frozen, and produce), providing item-level
+  data and control with claimed 99% order accuracy and roughly 50% lower operating costs. The
+  company operates automated micro-fulfillment facilities and partners with grocery and delivery
+  operators. Backed by DCVC, Fulfil was surfaced as a portfolio company and profiled in the API
+  Evangelist network; it publishes a marketing website but no public developer, API, or
+  documentation surface at this time.
 url: https://raw.githubusercontent.com/api-evangelist/fulfil/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +29,28 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Robotics
+- Automation
+- Fulfillment
+- Grocery
+- Supply Chain
+- Logistics
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/fulfil-domain-security.yml
+- type: Website
+  url: https://www.fulfil.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
